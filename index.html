@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+</head>
+<body>
+<h2>Login</h2>
+<input id="u" placeholder="username"><br>
+<input id="p" type="password" placeholder="password"><br>
+<button onclick="login()">Login</button>
+
+<script>
+function login(){
+ if(u.value=="admin" && p.value=="1234"){
+   window.location="dashboard.html";
+ } else alert("Invalid");
+}
+</script>
+</body>
+</html>
