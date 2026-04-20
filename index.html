@@ -11,9 +11,14 @@
 
 <script>
 function login(){
- if(u.value=="admin" && p.value=="1234"){
-   window.location="dashboard.html";
- } else alert("Invalid");
+ let u = document.getElementById("u").value;
+ let p = document.getElementById("p").value;
+
+ if(u=="admin" && p=="1234"){
+   window.location.href="dashboard.html";
+ } else {
+   alert("Invalid");
+ }
 }
 </script>
 </body>
